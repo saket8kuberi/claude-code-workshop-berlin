@@ -6,6 +6,9 @@
   },
   "updateContentCommand": "npm ci --prefix templates/portfolio && npm ci --prefix templates/landing",
   "waitFor": "updateContentCommand",
+  "mounts": [
+    "source=claude-code-config,target=/home/node/.claude,type=volume"
+  ],
   "forwardPorts": [3000],
   "portsAttributes": {
     "3000": {
