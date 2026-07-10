@@ -5,12 +5,23 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: "#0f0f0f",
-        paper: "#fafaf7",
-        accent: "#3b82f6",
+        ink: "#f5f5f7",
+        paper: "#08090d",
+        surface: "#111318",
+        accent: "#7c6cf6",
+        accent2: "#4f9cf9",
       },
       fontFamily: {
         sans: ["ui-sans-serif", "system-ui", "sans-serif"],
+      },
+      keyframes: {
+        "fade-up": {
+          "0%": { opacity: "0", transform: "translateY(14px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+      },
+      animation: {
+        "fade-up": "fade-up 0.7s ease-out forwards",
       },
     },
   },
